@@ -21,6 +21,7 @@ def phone_number_ner(check_list):
     for match_id, start, end in matches:
         span = check[start:end]
         phone_numbers.append(span.text)
+    return label, phone_numbers
     print(phone_numbers)
 
 phone_number_ner({"998-345-997", "no", "887-998-124"})

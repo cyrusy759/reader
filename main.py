@@ -6,5 +6,5 @@ file_path = "Resume-Sample-2"
 analyse = extract_text(f"{file_path}.pdf")
 analyse2 = text_ner(analyse)
 
-print(analyse2)
+print(analyse)
 
